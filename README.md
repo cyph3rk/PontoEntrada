@@ -32,6 +32,8 @@ curl -i -X POST "http://localhost:8082/auth/login" \
         }'
 ```
 
+#### &emsp;&emsp; Atenção: Você deve substituir o token em todos os comandos, é fácil fazer isso com CTRL+F e usar o substituir do intelliJ
+
 #### &emsp;&emsp; Quatro comandos para cadastrar três nós itens
 
 ```shell
