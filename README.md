@@ -10,6 +10,7 @@ MicroServiço Usuários do projeto FiapShop Pós-Fiap 5a fase**
 
 <br>
 
+Abaixo temos uma sequência de comandos que podem ser usados depois que subir o docker compose da pasta ambienteDev e ter os micro serviços rodando.
 
 #### &emsp;&emsp; Cadastro Um novo usuário
 
@@ -39,7 +40,7 @@ curl -i -X POST "http://localhost:8082/auth/login" \
 ```shell
 curl -i -X POST "http://localhost:8081/api/itens" \
      -H "Content-Type:application/json" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTA3NzgxMn0.V0NJ-pK5B1oEEByvBcgi_yPFXOHoCxpiW_BV6wfJraw" \
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I" \
      -d '{"nome": "brinquedo 1",
           "valor": "10,00",
           "estoque": "10"
@@ -49,7 +50,7 @@ curl -i -X POST "http://localhost:8081/api/itens" \
 ```shell
 curl -i -X POST "http://localhost:8081/api/itens" \
      -H "Content-Type:application/json" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTA3NzgxMn0.V0NJ-pK5B1oEEByvBcgi_yPFXOHoCxpiW_BV6wfJraw" \
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I" \
      -d '{"nome": "brinquedo 2",
           "valor": "20,00",
           "estoque": "20"
@@ -58,7 +59,7 @@ curl -i -X POST "http://localhost:8081/api/itens" \
 ```shell
 curl -i -X POST "http://localhost:8081/api/itens" \
      -H "Content-Type:application/json" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTA3NzgxMn0.V0NJ-pK5B1oEEByvBcgi_yPFXOHoCxpiW_BV6wfJraw" \
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I" \
      -d '{"nome": "brinquedo 3",
           "valor": "30,00",
           "estoque": "30"
@@ -67,7 +68,7 @@ curl -i -X POST "http://localhost:8081/api/itens" \
 ```shell
 curl -i -X POST "http://localhost:8081/api/itens" \
      -H "Content-Type:application/json" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTA3NzgxMn0.V0NJ-pK5B1oEEByvBcgi_yPFXOHoCxpiW_BV6wfJraw" \
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I" \
      -d '{"nome": "brinquedo 4",
           "valor": "40,00",
           "estoque": "40"
@@ -86,7 +87,7 @@ curl -i -X GET "http://localhost:8081/api/itens" \
 ```shell
 curl -i -X GET "http://localhost:8081/api/itens/4" \
      -H "Content-Type:application/json" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTA3NzgxMn0.V0NJ-pK5B1oEEByvBcgi_yPFXOHoCxpiW_BV6wfJraw" 
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I" 
 ```
 
 #### &emsp;&emsp; Pega Itens por Nome
@@ -94,7 +95,7 @@ curl -i -X GET "http://localhost:8081/api/itens/4" \
 ```shell
 curl -i -X GET "http://localhost:8081/api/itens/nome/brinquedo%204" \
      -H "Content-Type:application/json" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTA3NzgxMn0.V0NJ-pK5B1oEEByvBcgi_yPFXOHoCxpiW_BV6wfJraw" 
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I" 
 ```
 
 #### &emsp;&emsp; Deleta Itens por Id
@@ -102,7 +103,7 @@ curl -i -X GET "http://localhost:8081/api/itens/nome/brinquedo%204" \
 ```shell
 curl -i -X DELETE "http://localhost:8081/api/itens/4" \
      -H "Content-Type:application/json" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTA3NzgxMn0.V0NJ-pK5B1oEEByvBcgi_yPFXOHoCxpiW_BV6wfJraw" 
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I" 
 ```
 
 #### &emsp;&emsp; Soma estoque a um item
@@ -110,7 +111,7 @@ curl -i -X DELETE "http://localhost:8081/api/itens/4" \
 ```shell
 curl -i -X PUT "http://localhost:8081/api/itens/3/10" \
      -H "Content-Type:application/json" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTA3NzgxMn0.V0NJ-pK5B1oEEByvBcgi_yPFXOHoCxpiW_BV6wfJraw" 
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I" 
 ```
 
 #### &emsp;&emsp; Três comandos que Adicionam itens no carrinho
@@ -118,7 +119,7 @@ curl -i -X PUT "http://localhost:8081/api/itens/3/10" \
 ```shell
 curl -i -X POST "http://localhost:8080/api/carrinho" \
      -H "Content-Type:application/json" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTA3NzgxMn0.V0NJ-pK5B1oEEByvBcgi_yPFXOHoCxpiW_BV6wfJraw" \
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I" \
      -d '{"id_usuario": 2,
           "id_itens": 1,
           "quantidade": "1"
@@ -127,7 +128,7 @@ curl -i -X POST "http://localhost:8080/api/carrinho" \
 ```shell
 curl -i -X POST "http://localhost:8080/api/carrinho" \
      -H "Content-Type:application/json" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTA3NzgxMn0.V0NJ-pK5B1oEEByvBcgi_yPFXOHoCxpiW_BV6wfJraw" \
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I" \
      -d '{"id_usuario": 2,
           "id_itens": 2,
           "quantidade": "2"
@@ -136,7 +137,7 @@ curl -i -X POST "http://localhost:8080/api/carrinho" \
 ```shell
 curl -i -X POST "http://localhost:8080/api/carrinho" \
      -H "Content-Type:application/json" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTA3NzgxMn0.V0NJ-pK5B1oEEByvBcgi_yPFXOHoCxpiW_BV6wfJraw" \
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I" \
      -d '{"id_usuario": 2,
           "id_itens": 3,
           "quantidade": "3"
@@ -148,7 +149,7 @@ curl -i -X POST "http://localhost:8080/api/carrinho" \
 ```shell
 curl -i -X GET "http://localhost:8080/api/carrinho/2" \
      -H "Content-Type:application/json" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTA3NzgxMn0.V0NJ-pK5B1oEEByvBcgi_yPFXOHoCxpiW_BV6wfJraw"
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I"
 ```
 
 #### &emsp;&emsp; Deleta um item do carrinho do cliente
@@ -156,7 +157,7 @@ curl -i -X GET "http://localhost:8080/api/carrinho/2" \
 ```shell
 curl -i -X DELETE "http://localhost:8080/api/carrinho" \
      -H "Content-Type:application/json" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTA3NzgxMn0.V0NJ-pK5B1oEEByvBcgi_yPFXOHoCxpiW_BV6wfJraw" \
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I" \
      -d '{"id_usuario": 2,
           "id_itens": 1
          }'
@@ -167,7 +168,7 @@ curl -i -X DELETE "http://localhost:8080/api/carrinho" \
 ```shell
 curl -i -X POST "http://localhost:8080/api/conta" \
      -H "Content-Type:application/json" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTA3NzgxMn0.V0NJ-pK5B1oEEByvBcgi_yPFXOHoCxpiW_BV6wfJraw" \
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I" \
      -d '{ "data": "2024-03-16T15:30:45.123456789",
            "cliente": "Diego",
            "produto": "Bola",
@@ -180,7 +181,7 @@ curl -i -X POST "http://localhost:8080/api/conta" \
 ```shell
 curl -i -X POST "http://localhost:8080/api/conta" \
      -H "Content-Type:application/json" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTA3NzgxMn0.V0NJ-pK5B1oEEByvBcgi_yPFXOHoCxpiW_BV6wfJraw" \
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I" \
      -d '{ "data": "2024-03-16T15:30:45.123456789",
            "cliente": "Diego",
            "produto": "Crrinho",
@@ -193,7 +194,7 @@ curl -i -X POST "http://localhost:8080/api/conta" \
 ```shell
 curl -i -X POST "http://localhost:8080/api/conta" \
      -H "Content-Type:application/json" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTA3NzgxMn0.V0NJ-pK5B1oEEByvBcgi_yPFXOHoCxpiW_BV6wfJraw" \
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I" \
      -d '{ "data": "2024-03-16T15:30:45.123456789",
            "cliente": "Diego",
            "produto": "Boneca",
@@ -206,7 +207,7 @@ curl -i -X POST "http://localhost:8080/api/conta" \
 ```shell
 curl -i -X POST "http://localhost:8080/api/conta" \
      -H "Content-Type:application/json" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTA3NzgxMn0.V0NJ-pK5B1oEEByvBcgi_yPFXOHoCxpiW_BV6wfJraw" \
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I" \
      -d '{ "data": "2024-03-16T15:30:45.123456789",
            "cliente": "Diego",
            "produto": "lapis",
@@ -222,7 +223,7 @@ curl -i -X POST "http://localhost:8080/api/conta" \
 ```shell
 curl -i -X DELETE "http://localhost:8080/api/conta/2" \
      -H "Content-Type:application/json" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTA3NzgxMn0.V0NJ-pK5B1oEEByvBcgi_yPFXOHoCxpiW_BV6wfJraw"
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I"
 ```
 
 #### &emsp;&emsp; Lista os itens do conta do usuário
@@ -230,5 +231,13 @@ curl -i -X DELETE "http://localhost:8080/api/conta/2" \
 ```shell
 curl -i -X GET "http://localhost:8080/api/conta/2024-03-16T15:30:45.123456789" \
      -H "Content-Type:application/json" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTA3NzgxMn0.V0NJ-pK5B1oEEByvBcgi_yPFXOHoCxpiW_BV6wfJraw"
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I"
+```
+
+#### &emsp;&emsp; Fecha carrinho do usuário
+
+```shell
+curl -i -X POST "http://localhost:8080/api/carrinho/usuario_novo" \
+     -H "Content-Type:application/json" \
+     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInN1YiI6InVzdWFyaW9fbm92byIsImV4cCI6MTcxMTI5NTcwMn0.4F4MJDEHsgmqIYT-wBVWjh8CGktLoTmRllzIp6m9M_I"
 ```
